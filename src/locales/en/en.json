@@ -1,0 +1,17 @@
+{
+     "translation": {
+       "headerTitle": "Members Management System ",
+       "listTitle": " Manage Members ",
+       "addmember":"  Add Member",
+       "name":"Member Name",
+       "email":"Email",
+       "phone":"Phone Number",
+       "address":"Address",
+       "dob":"Date of Birth",
+       "id":"Id",
+       "gender":"Gender",
+       "membership_date":" Membership Start Date",
+       "membership_type":"Membership Type",
+       "subscribe":"Subscribe to Newsletter"
+     }
+   }

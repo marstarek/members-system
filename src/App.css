@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    font-family: Cairo-Regular;
+}
+table {
+    border-collapse: collapse;
+}
+td,
+th {
+    /* border: 1px solid #dba24e; */
+    padding: .8rem;
+    font-weight: 500;
+
+}
+.p-column-header-content{
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    min-height: 500px;
+}
+thead{
+    background: #5793ce;
+    height: 4rem;
+    position: sticky;
+    color: white;
+    
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#5793ce;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.p-datatable
+  {      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;}
+.p-datatable-emptymessage{
+    color: rgb(209, 49, 49);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.p-paginator{
+    /* border-top: 2px solid #678aad; */
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    gap: 1rem;
+    
+    
+} 
+.p-datatable-tbody tr{
+height: 3rem;
+}
+.p-paginator-first{ 
+    
+padding: 0.6rem;
+    border: 2px solid #678aad;
+    border-radius: 15px;
+    background: #b4b3b2;
+    color: rgb(0, 0, 0);}
+.p-paginator-prev{
+    border: 2px solid #678aad;
+        border-radius: 15px;
+        background: #b4b3b2;
+        color: rgb(0, 0, 0);
+        padding: 0.5rem;
+    
+}
+.p-paginator-pages{
+    display: flex;
+    gap: .5rem;
+}
+.p-paginator-page {
+
+        border: 2px solid #678aad;
+            border-radius: 15px;
+            background: #678aad;
+            color: rgb(0, 0, 0);
+            padding: 0.5rem;
+
+
+
+}
+.p-paginator-next {
+        border: 2px solid #678aad;
+        border-radius: 15px;
+        background: #b4b3b2;
+        color: rgb(0, 0, 0);padding: 0.5rem;
+}
+
+.p-paginator-last { 
+    padding: 0.6rem;
+    border: 2px solid #678aad;
+    border-radius: 15px;
+    background: #b4b3b2;
+    color: rgb(0, 0, 0);}
+.p-paginator-rpp-options{
+
+}
+.p-dropdown {
+    padding: 0.6rem;
+    border: 2px solid #678aad;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+}
+.p-inputwrapper-focus {
+    background: #678aad;
+}
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: #678aad;
+    border-color: #868483;
+    color: black;
+}
+.p-disabled,
+.p-disabled * {
+    cursor: default !important;
+    pointer-events: none !important;
+    member-select: none !important;
+    background: #678aad !important;
+    opacity: .5;
+
+}
+.p-dropdown-panel {
+color: black;
+}
+
+
+
+.p-datatable table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border: solid #A1A1A1  2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.p-datatable tr {
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.p-datatable td {
+    text-align: center;
+    border-radius: 0px;
+    padding: 2px
+}
+
+.p-datatable tr,
+.p-datatable td {
+    text-align: center;
+    padding: 2px;
+
+}
+.p-datatable td:first-child,
+.p-datatable td:first-child {
+    border-left: none;
+}
+
+.p-datatable thead th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+.p-datatable  thead th:last-child {
+    border-radius: 0 5px 0 0;
+
+}
+
+
+.p-datatable td.hover02:first-child {
+    border-radius: 0 0 0 6px;
+}
+
+.p-datatable td.hover02:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+@font-face {
+    font-family: "Cairo-Regular";   /*Can be any text*/
+    src: local("Cairo-Regular"),
+      url("../src/fonts/Cairo-Regular.ttf") format("truetype");
+  }
+
