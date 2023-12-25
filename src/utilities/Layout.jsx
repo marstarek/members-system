@@ -56,10 +56,7 @@ Management System
 </li>
 
 
-            <li>
-              <Link to={'/home'} className=' text-accent btn bg-transparent  hover:bg-base-200   border-0 flex items-center  justify-start text-md font-semibold' >
-            <BiSolidCalendarEvent />   HOME
-          </Link></li>
+            
             
                     </ul>
                 </div>

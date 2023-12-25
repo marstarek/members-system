@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import Switcher from "../../utilities/Switcher";
-import { RiLogoutCircleLine, RiAccountCircleFill } from "react-icons/ri";
 import { removeMemberData } from "../../redux/memberSlice";
 import { useDispatch } from "react-redux";
 import {  useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoMdSettings } from "react-icons/io";
 import { axiosInstance } from "../../hooks/axiosClient";
+import { TbLogout2 } from "react-icons/tb";
 
 const Navbar = ({ children }) => {
   const {
@@ -106,7 +106,9 @@ const Navbar = ({ children }) => {
                 </li>
                 <li onClick={logOut}>
                   <span className="font-semibold flex flex-row justify-center ">
-                    <RiLogoutCircleLine className="text-[#212529] w-[1.5rem] h-[1.5rem]  " />
+                  <TbLogout2 className="text-[#212529] w-[1.5rem] h-[1.5rem]  " />
+
+                    
                   </span>
                 </li>
               </ul>

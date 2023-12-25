@@ -36,7 +36,7 @@ export default function Modal({ children, isOpen, closeModal, setIsOpen, openMod
                                 <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-base-300 p-6 text-left align-middle shadow-xl transition-all">
                                     <Dialog.Title
                                         as="h1"
-                                        className="text-3xl font-bold text-center text-accent py-3 uppercase"
+                                        className="text-3xl font-bold text-rose-700 text-center py-3 uppercase"
                                     >
                                         {title}
 

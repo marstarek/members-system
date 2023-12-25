@@ -72,12 +72,12 @@ height: 3rem;
 .p-paginator-first{ 
     
 padding: 0.6rem;
-    border: 2px solid #678aad;
+    border: 2px solid #868483;
     border-radius: 15px;
     background: #b4b3b2;
     color: rgb(0, 0, 0);}
 .p-paginator-prev{
-    border: 2px solid #678aad;
+    border: 2px solid #868483;
         border-radius: 15px;
         background: #b4b3b2;
         color: rgb(0, 0, 0);
@@ -90,7 +90,7 @@ padding: 0.6rem;
 }
 .p-paginator-page {
 
-        border: 2px solid #678aad;
+        border: 2px solid #868483;
             border-radius: 15px;
             background: #678aad;
             color: rgb(0, 0, 0);
@@ -100,7 +100,7 @@ padding: 0.6rem;
 
 }
 .p-paginator-next {
-        border: 2px solid #678aad;
+        border: 2px solid #868483;
         border-radius: 15px;
         background: #b4b3b2;
         color: rgb(0, 0, 0);padding: 0.5rem;
@@ -108,7 +108,7 @@ padding: 0.6rem;
 
 .p-paginator-last { 
     padding: 0.6rem;
-    border: 2px solid #678aad;
+    border: 2px solid #868483;
     border-radius: 15px;
     background: #b4b3b2;
     color: rgb(0, 0, 0);}
@@ -117,7 +117,7 @@ padding: 0.6rem;
 }
 .p-dropdown {
     padding: 0.6rem;
-    border: 2px solid #678aad;
+    border: 2px solid #868483;
     border-radius: 15px;
     color: rgb(0, 0, 0);
 }
@@ -125,16 +125,15 @@ padding: 0.6rem;
     background: #678aad;
 }
 .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
-    background: #678aad;
     border-color: #868483;
     color: black;
+    background: #678aad;
 }
 .p-disabled,
 .p-disabled * {
     cursor: default !important;
     pointer-events: none !important;
     member-select: none !important;
-    background: #678aad !important;
     opacity: .5;
 
 }

@@ -1,27 +1,25 @@
 import { createBrowserRouter } from "react-router-dom";
-import Login from "../pages/login/Login";
+import Login from "../pages/login/LoginPage";
 import Layout from "../utilities/Layout";
-import ErrorBoundary from "../utilities/ErrorBoundary";
-import List from "../pages/list/List";
-import AddMember from "../components/forms/members_crud/AddMember";
-import EditMember from "../components/forms/members_crud/EditMember";
+import ErrorPage from "../utilities/ErrorPage";
+import MembersPage from "../pages/membersList/MembersPage";
+import AddMember from "../components/members_crud/AddMember";
+import EditMember from "../components/members_crud/EditMember";
 import Show from "../pages/show/Show";
 
 const routes = [
     {
         path: '/',
         element: <Login />,
-        errorElement: <ErrorBoundary />,
-        children: [
-            { index: true, element: <Login /> }
-        ]
+        errorElement: <ErrorPage />,
+       
     },
     {
         path: '/home',
         element: <Layout/>,
-        errorElement: <ErrorBoundary />,
+        errorElement: <ErrorPage />,
         children: [
-            { index: true, element: <List /> },
+            { index: true, element: <MembersPage /> },
             { path: "new-member", element: <AddMember /> },
             { path: "edit-member/:id", element: <EditMember /> },
             { path: "show-member/:id", element: <Show /> }

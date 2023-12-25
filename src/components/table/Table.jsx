@@ -43,7 +43,8 @@ export default function Table({ cols,  data,  filters,  openDelModal  }) {
         </ >
     };
     return (
-        <div ><DataTable paginator  rows={30} rowsPerPageOptions={[5, 10, 25, 50]} editMode="row" dataKey="id" className='text-accent  ' stripedRows filters={filters} showGridlines value={data} tableStyle={{ minWidth: '50rem',overflow:"inherit" }} scrollable scrollHeight="600px"  >
+        <div >
+            <DataTable paginator rows={30} rowsPerPageOptions={[5, 10, 25, 50]} editMode="row" dataKey="id" className='text-accent  ' stripedRows filters={filters} showGridlines value={data} tableStyle={{ minWidth: '50rem', overflow: "inherit" }} scrollable scrollHeight="600px"  >
                         {cols.map((col, index) => (
                 <Column key={index} sortable field={col.field} header={col.header} body={col.body} />
                         ))}

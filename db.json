@@ -259,19 +259,6 @@
       "avatar": "https://picsum.photos/300/300",
       "memb_start_date": "2023-12-21",
       "phone": "01129689368"
-    },
-    {
-      "name": "Ahmed Tarek",
-      "email": "tarekahmed1212@gmail.com",
-      "address": "dfdf",
-      "membership_type": "VIP",
-      "memb_start_date": "2023-12-12",
-      "dob": "1997/5/3",
-      "id": "29705030205317",
-      "Gender": "Male",
-      "Subscribe": true,
-      "phone": "+201129689368",
-      "avatar": "/images/avatar.png"
     }
   ]
 }

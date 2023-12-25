@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 
-const List = () => {
+const MembersPage = () => {
   const {
     t,
     i18n: { changeLanguage, language },
@@ -80,8 +80,8 @@ const List = () => {
     const value = filters['global'] ? filters['global'].value : '';
     return (
     
-      <div className="flex justify-between my-3 ">
-        <div className='w-1/2'>
+      <div className="flex justify-between my-3 flex-col items-center gap-2 ">
+        <div className='w-2/3'>
           <label htmlFor="default-search" className="mb-2 text-sm font-medium text-accent sr-only ">Search</label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -89,12 +89,12 @@ const List = () => {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
             </div>
-            <InputText type="search" value={value || ''} onChange={(e) => onGlobalFilterChange(e)} className="block w-full p-4 pl-10 text-sm text-accent  border-1 rounded-lg bg-transparent focus:none border-solid border-2 border-[#A1A1A1]" placeholder="Search By name, email, membership type,id, Membership date, phone number" />
+            <InputText type="search" value={value || ''} onChange={(e) => onGlobalFilterChange(e)} className="block w-full p-4 pl-10 text-sm text-accent  border-1  bg-transparent focus:none border-solid border-2 rounded-[3rem] border-[#A1A1A1]" placeholder="Search By name, email, membership type,id, Membership date, phone number" />
           </div>
         </div>
         <div className="flex justify-start ">
           <Link to={'/home/new-member'}>
-          <button className='btn border-0 text-white select-none  bg-neutral rounded-md lg:w-40 md:w-30  hover:bg-neutral' 
+          <button className='btn border-0 text-white select-none rounded-xl  bg-neutral  lg:w-40 md:w-30  hover:bg-neutral rounded-[3rem]' 
             > {t("addmember")}
               
               </button></Link>
@@ -107,16 +107,14 @@ const List = () => {
   return (
       <>
     <div className=' mx-auto'>
-      <div className="flex flex-wrap gap-2 w-full justify-center py-2 ">
-        <h2 className='text-accent text-xl font-semibold'> {t("listTitle")} </h2>
-      </div>
+      
       {renderHeader()}
       <div className="card">
         {isError ? <span> Error{error.message}</span> : isPending ? <Loading ></Loading> :
           <Table cols={cols} data={data} filters={filters} openDelModal={openDelModal}   ></Table>
         }
       </div>
-      <Modal isOpen={isDelOpen} closeModal={closeDelModal} title='delete Member' >
+      <Modal isOpen={isDelOpen} closeModal={closeDelModal} title='Delete!' >
         <DeleteForm isOpen={isDelOpen} closeModal={closeDelModal} setIsOpen={setIsDelOpen} refetch={refetch} selected={selected}  />
       </Modal>
 
@@ -128,4 +126,4 @@ const List = () => {
   )
 }
 
-export default List
+export default MembersPage

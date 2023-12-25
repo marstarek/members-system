@@ -1,7 +1,7 @@
 import { Link, useRouteError } from "react-router-dom";
 
 
-const ErrorBoundary = () => {
+const ErrorPage = () => {
   const error = useRouteError();
   console.error(error);
 
@@ -32,5 +32,5 @@ const ErrorBoundary = () => {
 
 }
 
-export default ErrorBoundary
+export default ErrorPage
 

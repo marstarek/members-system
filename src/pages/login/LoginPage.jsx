@@ -1,6 +1,6 @@
 import LoginForm from "../../components/forms/LoginForm"
 
-const Login = () => {
+const LoginPage = () => {
     return (
 
         <div className='w-full h-screen flex justify-evenly items-center flex-col bg-base-300 ' >
@@ -39,4 +39,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginPage

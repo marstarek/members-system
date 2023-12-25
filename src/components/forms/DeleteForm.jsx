@@ -24,7 +24,7 @@ const DeleteForm = ({ selected,  closeModal,refetch}) => {
   };
   return (
     <div className='w-full'> 
-      <ToastContainer position="top-center"
+      <ToastContainer position="top-right"
                 autoClose={5000}
                 hideProgressBar={false}
                 newestOnTop={false}
@@ -37,13 +37,13 @@ const DeleteForm = ({ selected,  closeModal,refetch}) => {
 
     <form onSubmit={handleSubmit(onSubmit)} >
       <div className="relative  text-center text-accent bg-base-300 rounded-lg  sm:p-5">
-          <p className="mb-4 text-accent">Are you sure you want to delete this member ?</p>
+          <p className="mb-4 text-accent">Are you sure you want to delete?</p>
         <div className="flex justify-center items-center space-x-4">
-            <button data-modal-toggle="deleteModal" type="button" className="py-2 px-3 text-sm font-medium text-gray-500 bg-white rounded-lg border  hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 border-[#A1A1A1] dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600" onClick={closeModal}>
-            No, cancel
+            <button data-modal-toggle="deleteModal" type="button" className="py-2 px-3 text-sm font-medium text-gray-500 bg-white rounded-lg border  border-[#A1A1A1]  " onClick={closeModal}>
+            cancel
           </button>
-          <button type="submit" className="py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-900">
-            Yes, I'm sure
+          <button type="submit" className="py-2 px-3 text-sm font-medium text-center text-white bg-red-700 rounded-lg  focus:ring-4 focus:outline-none   ">
+            Delete
           </button>
         </div>
       </div>
